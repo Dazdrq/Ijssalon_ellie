@@ -22,6 +22,8 @@ def laag_en_hoog(mijn_lijst):
     laagste=min(mijn_lijst)
     hoogste=max(mijn_lijst)
     return laagste,hoogste
+ 
+
     
 
 laag_en_hoog([220, 430, 125, 160, 205, 90, 345])
@@ -39,15 +41,16 @@ def meervoudig(invoer_lijst):
     laagste = min(invoer_lijst)
     hoogste = max(invoer_lijst)
     return laagste, hoogste
+   
 
 
 meervoudig([10, 5, 3, 2, 7, 2, 9])
 
 #Opdracht 12
 def combinatie(invoer_lijst_2):
-    laagste=min(invoer_lijst_2)
-    hoogste=max(invoer_lijst_2)
-    korte_lijst = (laagste,hoogste)
-    return korte_lijst
+    korte_lijst= laag_en_hoog(invoer_lijst_2)
+    resultaat = mijn_functie_2(korte_lijst)
+    return resultaat
 
-mijn_functie_2(combinatie([10, 5, 3, 2, 7, 2, 9]))
+combinatie([10, 5, 3, 2, 7, 2, 9])
+
